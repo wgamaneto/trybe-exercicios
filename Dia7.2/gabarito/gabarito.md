@@ -56,3 +56,17 @@ expect(welcomeUser()).toMatch(
   'O parâmetro username deve ser do tipo texto!',
 );
 ```
+
+# finalSpeed
+
+```
+expect(finalSpeed(5)).toEqual(49);
+
+expect(finalSpeed('5')).toEqual(0);
+expect(finalSpeed('string')).toEqual(0);
+expect(finalSpeed(['5'])).toEqual(0);
+expect(finalSpeed([5])).toEqual(0);
+expect(finalSpeed({ a: 5 })).toEqual(0);
+
+expect(finalSpeed()).toEqual(0);
+```

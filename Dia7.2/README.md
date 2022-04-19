@@ -47,9 +47,19 @@ boas-vindas.
 
 - Retorna `Boas-vindas, Gabriel!` caso `Gabriel` seja o nome passado como parâmetro;
 - Retorna `O parâmetro username deve conter pelo menos um caracter!` caso a quantidade de caracteres for menor que 1;
-- Retorna `O parâmetro username deve ser do tipo texto!` caso o parâmetro não seja do tipo `string`
+- Retorna `O parâmetro username deve ser do tipo texto!` caso o parâmetro não seja do tipo `string`;
 
-**Exercício 5:** Escreva uma função que calcule a velocidade final de um objeto em queda livre dado o tempo que levou para atingir o solo. A fórmula para o cálculo é velocidade = tempo \* gravidade. Considere a gravidade constante de 9.8.
+# finalSpeed
+
+A função recebe um número como parâmetro e faz o cálculo da velocidade final de um objeto em queda livre dado o tempo que levou para atingir o solo.
+
+_obs:_ A fórmula para o cálculo é `velocidade = tempo * gravidade`. Considere a gravidade constante de 9.8.
+
+**O que será testado**
+
+- Retorna `49` caso a função seja chamanda com o argumento 5`finalSpeed(5)`;
+- Retorna `0` caso o parâmetro seja algum tipo diferente de `number`;
+- Retorna `0` caso não seja passado parâmetros;
 
 **Exercício 6:** Utilizando operadores ternários e arrow functions reescreva a seguinte função:
 
