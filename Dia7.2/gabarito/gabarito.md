@@ -70,3 +70,24 @@ expect(finalSpeed({ a: 5 })).toEqual(0);
 
 expect(finalSpeed()).toEqual(0);
 ```
+
+# shoppingList
+
+```
+expect(shoppingList('refrigerante de laranja')).toContain(
+  'refrigerante de laranja',
+);
+
+expect(shoppingList('filé de peixe')).toContain('filé de peixe');
+
+expect(shoppingList('farinha de trigo')).toContain('farinha de trigo');
+
+const arr = [
+  'suco de maracujá',
+  'maçã',
+  'sacos de lixo',
+  'papel toalha',
+  'leite',
+];
+expect(shoppingList()).toEqual(arr);
+```

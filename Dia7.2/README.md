@@ -61,15 +61,13 @@ _obs:_ A fórmula para o cálculo é `velocidade = tempo * gravidade`. Considere
 - Retorna `0` caso o parâmetro seja algum tipo diferente de `number`;
 - Retorna `0` caso não seja passado parâmetros;
 
-**Exercício 6:** Utilizando operadores ternários e arrow functions reescreva a seguinte função:
+# shoppingList
 
-```javascript
-function isZero(number) {
-  if (number === 0) {
-    return 'Zero';
-  }
-  return 'Not zero';
-}
-```
+A função recebe uma string como parâmetro e retorna a lista de compras com o novo item adicionado;
 
-**Exercício Bônus:** Escreva uma função que, dado um array, verifique se todos os valores são iguais. Valide que o tipo de entrada seja array e que o tamanho seja maior que 1.
+**O que será testado**
+
+- Com a chamada `shoppingList('filé de peixe')`, veja se o item `'filé de peixe'` foi adicionado a lista de compra;
+- Com a chamada `shoppingList('refrigerante de laranja')`, veja se o item `'refrigerante de laranja'` foi adicionado a lista de compra;
+- Com a chamada `shoppingList('farinha de trigo')`, veja se o item `'farinha de trigo'` foi adicionado a lista de compra;
+- Sem parâmetros, retorne o array `['suco de maracujá', 'maçã', 'sacos de lixo', 'papel toalha', 'leite',]`;
