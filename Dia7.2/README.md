@@ -17,7 +17,17 @@ Essa função recebe um número como parâmetro e faz uma validação se o núme
 - Escreva um teste se quando a função é chamada `isEven(2)`, retorna a string "esse valor é par";
 - Escreva um teste se quando a função é chamada `isEven(3)`, retorna a string "esse valor é ímpar";
 
-**Exercício 2:** Escreva uma função que recebe por parâmetro um array de números e retorna a soma dos números pares. Se nenhum número for par, ou o array for vazio a soma deve ser zero. ( dica: já fizemos uma função que verificar se o número é par)
+# sumEven
+
+A função recebe um array de números por parâmetro e faz a soma de todos os números pares.
+
+_dica:_ Já fizemos uma função que verifica se o número é par;
+
+**O que será avaliado**
+
+- Retorne a soma de todos os números pares passado no array como parâmetro da função;
+- Retorne `0` se o array não tenha ao menos um número par;
+- Retorne `0` se o parâmetro da função estiver vazio;
 
 **Exercício 3:** Escreva uma função que dado um parâmetro retorna se o tipo de dado é Number.
 

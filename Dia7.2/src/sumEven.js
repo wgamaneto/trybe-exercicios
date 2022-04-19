@@ -1,9 +1,7 @@
-// Escreva uma função que recebe por parâmetro um array de números e retorna a soma dos números pares.
-//Se nenhum número for par, ou o array for vazio a soma deve ser zero.
-
 const isEven = (number) => number % 2 === 0;
 const sumEven = (array) => {
   let sum = 0;
+  if (!array) return sum;
   for (const val of array) {
     if (isEven(val)) {
       sum += val;
@@ -11,3 +9,5 @@ const sumEven = (array) => {
   }
   return sum;
 };
+
+module.exports = sumEven;
