@@ -34,3 +34,25 @@ expect(isNumber(['1', '2', '3', '4'])).toBeFalsy();
 
 expect(isNumber({ a: 10, b: 20, c: 30 })).toBeFalsy();
 ```
+
+# welcomeUser
+
+```
+expect(welcomeUser('Gabriel')).toMatch('Boas-vindas, Gabriel!');
+
+
+expect(welcomeUser('a')).toMatch(
+  'O parâmetro username deve conter pelo menos um caracter!',
+);
+expect(welcomeUser('')).toMatch(
+  'O parâmetro username deve conter pelo menos um caracter!',
+);
+
+
+expect(welcomeUser(['Carlos'])).toMatch(
+  'O parâmetro username deve ser do tipo texto!',
+);
+expect(welcomeUser()).toMatch(
+  'O parâmetro username deve ser do tipo texto!',
+);
+```

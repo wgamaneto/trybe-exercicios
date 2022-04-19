@@ -12,7 +12,7 @@ Cada função implementada está em um arquivo com seu nome na pasta `src`, os a
 
 Essa função recebe um número como parâmetro e faz uma validação se o número é ou não par, retornando uma string.
 
-**O que será avaliado**
+**O que será testado**
 
 - Escreva um teste se quando a função é chamada `isEven(2)`, retorna a string "esse valor é par";
 - Escreva um teste se quando a função é chamada `isEven(3)`, retorna a string "esse valor é ímpar";
@@ -23,7 +23,7 @@ A função recebe um array de números por parâmetro e faz a soma de todos os n
 
 _dica:_ Já fizemos uma função que verifica se o número é par;
 
-**O que será avaliado**
+**O que será testado**
 
 - Retorne a soma de todos os números pares passado no array como parâmetro da função;
 - Retorne `0` se o array não tenha ao menos um número par;
@@ -38,7 +38,16 @@ A função recebe um parâmetro como argumento e faz uma validação se seu tipo
 - Retorna `false` se passar uma array como parâmetro da função;
 - Retorna `false` se passar um objeto como parâmetro da função;
 
-**Exercício 4:** Escreva uma função que receba um nome de usuário e retorne a seguinte mensagem: "Boas vindas, USERNAME". Valide que o tipo de dado seja string e o texto tenha pelo menos 1 caracter.
+# welcomeUser
+
+A função recebe uma string com o nome de uma pessoa usuária e retorna uma nova string desejando
+boas-vindas.
+
+**O que será testado**
+
+- Retorna `Boas-vindas, Gabriel!` caso `Gabriel` seja o nome passado como parâmetro;
+- Retorna `O parâmetro username deve conter pelo menos um caracter!` caso a quantidade de caracteres for menor que 1;
+- Retorna `O parâmetro username deve ser do tipo texto!` caso o parâmetro não seja do tipo `string`
 
 **Exercício 5:** Escreva uma função que calcule a velocidade final de um objeto em queda livre dado o tempo que levou para atingir o solo. A fórmula para o cálculo é velocidade = tempo \* gravidade. Considere a gravidade constante de 9.8.
 
