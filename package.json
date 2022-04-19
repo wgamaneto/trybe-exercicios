@@ -1,0 +1,23 @@
+{
+  "name": "academia-de-logica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/academia-de-logica.git"
+  },
+  "keywords": [],
+  "author": "Carlos Eduardo <cpwaldow@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tryber/academia-de-logica/issues"
+  },
+  "homepage": "https://github.com/tryber/academia-de-logica#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
