@@ -29,7 +29,14 @@ _dica:_ Já fizemos uma função que verifica se o número é par;
 - Retorne `0` se o array não tenha ao menos um número par;
 - Retorne `0` se o parâmetro da função estiver vazio;
 
-**Exercício 3:** Escreva uma função que dado um parâmetro retorna se o tipo de dado é Number.
+# isNumber
+
+A função recebe um parâmetro como argumento e faz uma validação se seu tipo de dado é ou não um número;
+
+- Retorna `true` se passar um número como parâmetro da função;
+- Retorna `false` se passar uma string como parâmetro da função;
+- Retorna `false` se passar uma array como parâmetro da função;
+- Retorna `false` se passar um objeto como parâmetro da função;
 
 **Exercício 4:** Escreva uma função que receba um nome de usuário e retorne a seguinte mensagem: "Boas vindas, USERNAME". Valide que o tipo de dado seja string e o texto tenha pelo menos 1 caracter.
 

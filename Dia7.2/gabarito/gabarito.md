@@ -20,3 +20,17 @@ expect(sumEven(arr)).toEqual(0);
 
 expect(sumEven()).toEqual(0);
 ```
+
+# isNumber
+
+```
+expect(isNumber(10)).toBeTruthy();
+
+expect(isNumber('20')).toBeFalsy();
+expect(isNumber('string')).toBeFalsy();
+
+expect(isNumber([20, 10, 30, 50, 90])).toBeFalsy();
+expect(isNumber(['1', '2', '3', '4'])).toBeFalsy();
+
+expect(isNumber({ a: 10, b: 20, c: 30 })).toBeFalsy();
+```
