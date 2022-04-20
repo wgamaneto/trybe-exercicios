@@ -1,5 +1,14 @@
 # Teste Unitário
 
+**Inicializando o projeto**
+
+- Faça o clone do projeto com o comando `git clone git@github.com:tryber/academia-de-logica.git`;
+- Verifique se você está na branch master com o comando `git branch`;
+- Crie sua branch com `git checkout -b SEUNOME`;
+- Instale as dependências com `npm install`;
+
+Para fazer os testes das funções, basta rodar o comando `npm test`. Para rodar um único teste, você pode utilizar o comando `npm test nome-do-arquivo`, por exemplo: `npm test isEven`
+
 Esse repositório tem como objetivo treinar a criação de testes unitários para funções já implementadas.
 
 [Documentação Jest](https://jestjs.io/docs/getting-started)
