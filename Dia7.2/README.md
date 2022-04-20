@@ -9,6 +9,8 @@
 
 Para fazer os testes das funções, basta rodar o comando `npm test`. Para rodar um único teste, você pode utilizar o comando `npm test nome-do-arquivo`, por exemplo: `npm test isEven`
 
+Para ver a cobertura de testes da função, basta rodar o comando `npm run test:coverage`
+
 Esse repositório tem como objetivo treinar a criação de testes unitários para funções já implementadas.
 
 [Documentação Jest](https://jestjs.io/docs/getting-started)
