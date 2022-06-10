@@ -82,3 +82,14 @@ A função recebe uma string como parâmetro e retorna a lista de compras com o 
 - Com a chamada `shoppingList('refrigerante de laranja')`, veja se o item `'refrigerante de laranja'` foi adicionado a lista de compra;
 - Com a chamada `shoppingList('farinha de trigo')`, veja se o item `'farinha de trigo'` foi adicionado a lista de compra;
 - Sem parâmetros, retorne o array `['suco de maracujá', 'maçã', 'sacos de lixo', 'papel toalha', 'leite',]`;
+
+# repeatLetter
+
+A função recebe dois parâmetros, sendo uma letra e um texto, conte quantas vezes a letra repete no texto;
+
+**O que será testado**
+
+- Retorne `2` quando a função for chamada `repeatLetter('m', 'how many times does the character occur in this sentence?')`;
+- Retorne `4` quando a função for chamada `repeatLetter('h', 'how many times does the character occur in this sentence?')`;
+- Retorne `1` quando a função for chamada `repeatLetter('?', 'how many times does the character occur in this sentence?')`;
+- Retorne `0` quando a função for chamada `repeatLetter('z', 'how many times does the character occur in this sentence?')`;
