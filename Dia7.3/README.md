@@ -19,7 +19,9 @@ Esse repositório tem como objetivo treinar a criação de testes unitários par
 
 Cada função implementada está em um arquivo com seu nome na pasta `src`, os arquivos de testes já foram criados e estão na pasta `test`.
 
-# isEven
+## isEven
+
+<hr>
 
 Essa função recebe um número como parâmetro e faz uma validação se o número é ou não par, retornando uma string.
 
@@ -28,7 +30,9 @@ Essa função recebe um número como parâmetro e faz uma validação se o núme
 - Escreva um teste se quando a função é chamada `isEven(2)`, retorna a string "esse valor é par";
 - Escreva um teste se quando a função é chamada `isEven(3)`, retorna a string "esse valor é ímpar";
 
-# sumEven
+## sumEven
+
+<hr>
 
 A função recebe um array de números por parâmetro e faz a soma de todos os números pares.
 
@@ -40,7 +44,9 @@ _dica:_ Já fizemos uma função que verifica se o número é par;
 - Retorne `0` se o array não tenha ao menos um número par;
 - Retorne `0` se o parâmetro da função estiver vazio;
 
-# isNumber
+## isNumber
+
+<hr>
 
 A função recebe um parâmetro como argumento e faz uma validação se seu tipo de dado é ou não um número;
 
@@ -49,7 +55,9 @@ A função recebe um parâmetro como argumento e faz uma validação se seu tipo
 - Retorna `false` se passar uma array como parâmetro da função;
 - Retorna `false` se passar um objeto como parâmetro da função;
 
-# welcomeUser
+## welcomeUser
+
+<hr>
 
 A função recebe uma string com o nome de uma pessoa usuária e retorna uma nova string desejando
 boas-vindas.
@@ -60,7 +68,9 @@ boas-vindas.
 - Retorna `O parâmetro username deve conter pelo menos um caracter!` caso a quantidade de caracteres for menor que 1;
 - Retorna `O parâmetro username deve ser do tipo texto!` caso o parâmetro não seja do tipo `string`;
 
-# finalSpeed
+## finalSpeed
+
+<hr>
 
 A função recebe um número como parâmetro e faz o cálculo da velocidade final de um objeto em queda livre dado o tempo que levou para atingir o solo.
 
@@ -72,7 +82,9 @@ _obs:_ A fórmula para o cálculo é `velocidade = tempo * gravidade`. Considere
 - Retorna `0` caso o parâmetro seja algum tipo diferente de `number`;
 - Retorna `0` caso não seja passado parâmetros;
 
-# shoppingList
+## shoppingList
+
+<hr>
 
 A função recebe uma string como parâmetro e retorna a lista de compras com o novo item adicionado;
 
@@ -83,7 +95,9 @@ A função recebe uma string como parâmetro e retorna a lista de compras com o 
 - Com a chamada `shoppingList('farinha de trigo')`, veja se o item `'farinha de trigo'` foi adicionado a lista de compra;
 - Sem parâmetros, retorne o array `['suco de maracujá', 'maçã', 'sacos de lixo', 'papel toalha', 'leite',]`;
 
-# repeatLetter
+## repeatLetter
+
+<hr>
 
 A função recebe dois parâmetros, sendo uma letra e um texto, conte quantas vezes a letra repete no texto;
 
@@ -93,3 +107,16 @@ A função recebe dois parâmetros, sendo uma letra e um texto, conte quantas ve
 - Retorne `4` quando a função for chamada `repeatLetter('h', 'how many times does the character occur in this sentence?')`;
 - Retorne `1` quando a função for chamada `repeatLetter('?', 'how many times does the character occur in this sentence?')`;
 - Retorne `0` quando a função for chamada `repeatLetter('z', 'how many times does the character occur in this sentence?')`;
+
+## longestWord
+
+<hr>
+
+A função recebe um array de string como parâmetro e retorna a maior palavra contida nele;
+
+**O que será testado**
+
+- Retorne `candy` caso o array passado seja `["I", "need", "candy"]`;
+- Retorne `help` caso o array passado seja `["help", "me"]`
+- Retorne `Array inválido!` caso não envie parâmetros
+- Retorne `Array inválido!` caso o array possua algum caractere diferente de string
