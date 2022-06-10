@@ -120,3 +120,12 @@ A função recebe um array de string como parâmetro e retorna a maior palavra c
 - Retorne `help` caso o array passado seja `["help", "me"]`
 - Retorne `Array inválido!` caso não envie parâmetros
 - Retorne `Array inválido!` caso o array possua algum caractere diferente de string
+
+## createState
+
+<hr>
+
+A função recebe 4 parâmetros e cria um Estado, recebendo o nome do Estado, Sigla, Capital e População;
+
+- Retorne a string `Bem-vindo ao estado Caduverso-CV, nossa capital Caduversolandia possui 137921852 pessoas` quando passamos `Caduverso`, `CV`, `Caduversolandia` e `137921852`
+- Retorne `Preencha todos os campos para criar sua cidade!` caso algum parâmetro não seja passado para a função
