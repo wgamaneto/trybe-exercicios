@@ -6,7 +6,6 @@ function quadrilatero(base, altura) {
   };
   return resultado;
 };
-console.log(quadrilatero(10, 20));
 
 //2
 function imparesEPares(numeros) {
