@@ -15,7 +15,7 @@ function imparesEPares(numeros) {
     impar: 0,
   };
 
-  for (i = 0; i < numeros.length; i += 1) {
+  for (index = 0; index < numeros.length; index += 1) {
     if (numeros[i] % 2 == 0) {
       resultado.par += 1;
     } else {
