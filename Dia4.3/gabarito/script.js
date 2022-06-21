@@ -1,6 +1,6 @@
 //1
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let arrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let element = 3;
 
 if (arr.indexOf(element) >= 0) {
