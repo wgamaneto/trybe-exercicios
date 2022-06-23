@@ -4,7 +4,7 @@ ________________________________________________________________________________
 1. Encontre o index através do valor de um elemento
 
 Escreva uma algoritmo que recebe 2 parâmetros:
- - Um array contendo um conjunto de nomes
+ - Um array contendo um conjunto de números
  - O valor de um desses elementos
 
 Procure esse elemento dentro do array, e imprima no terminal a posição index em que o elemento encontra-se.
