@@ -62,3 +62,13 @@ for (let minimo = 101; minimo < numbers.length; minimo -= 1) {
 console.log(mim);
 
 //Questao 8
+let numeros = [];
+for (let array = 1; array <=25; array += 1) {
+  numeros.push(array)
+}
+console.log(numeros)
+
+//Questao 9
+for (let divisao = 0; divisao < numeros.length; divisao += 1) {
+  console.log(numeros[divisao] / 2)
+}
