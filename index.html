@@ -72,11 +72,16 @@
 
             //Questao 5
             function mudarMaiusculo() {
-                document.getElementsByTagName('p').value.toUpperCase();
+                const variavel = document.getElementsByTagName('p');
+                for (index of variavel) {
+                    console.log(index.innerText.toUpperCase());
+                    index.innerText = index.innerText.toUpperCase();
+                }
+                
             }
             mudarMaiusculo()
 
-            //Questao 
+            //Questao 6
             function imprimir() {
                 const mostrar = document.getElementsByTagName('p');
                 for (tags of mostrar) {
@@ -84,9 +89,6 @@
                 }
             }
             imprimir()
-
-
-        
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
