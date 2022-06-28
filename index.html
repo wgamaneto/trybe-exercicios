@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+        main,
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>
+    <main class="main-content">
+        <section class="center-content">
+            <p>Texto padrão do nosso site</p>
+            <p>-----</p>
+            <p>Trybe</p>
+        </section>
+    </main>
+    <script>
+        
+            //Questao 1
+            function mudarTexto() {
+                document.getElementsByTagName('p')[1].innerText = 'Estar trabalhando com tecnologia no Exterior!';
+            }
+            mudarTexto()
+
+            //Questao 2
+            function mudarCor1() {
+                document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
+            }
+            mudarCor1()
+
+            //Questao 3
+            function mudarCor2() {
+                document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+            }
+            mudarCor2()
+
+            //Questao 4
+            function mudarTag() {
+                document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
+            }
+            mudarTag()
+
+            //Questao 5
+            function mudarMaiusculo() {
+                document.getElementsByTagName('p').value.toUpperCase();
+            }
+            mudarMaiusculo()
+
+            //Questao 
+            function imprimir() {
+                const mostrar = document.getElementsByTagName('p');
+                for (tags of mostrar) {
+                    console.log(tags.innerText)
+                }
+            }
+            imprimir()
+
+
+        
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+ 1 - Crie uma função que mude o texto na tag <p>-----</p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+ 2 - Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+ 3 - Crie uma função que mude a cor do quadrado vermelho para branco.
+ 4 - Crie uma função que corrija o texto da tag <h1>.
+ 5 - Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+ 6 - Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+    </script>
+</body>
+
+</html>
