@@ -45,50 +45,50 @@
         </section>
     </main>
     <script>
-        
-            //Questao 1
-            function mudarTexto() {
-                document.getElementsByTagName('p')[1].innerText = 'Estar trabalhando com tecnologia no Exterior!';
-            }
-            mudarTexto()
 
-            //Questao 2
-            function mudarCor1() {
-                document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
-            }
-            mudarCor1()
+        //Questao 1
+        function mudarTexto() {
+            document.getElementsByTagName('p')[1].innerText = 'Estar trabalhando com tecnologia no Exterior!';
+        }
+        mudarTexto()
 
-            //Questao 3
-            function mudarCor2() {
-                document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
-            }
-            mudarCor2()
+        //Questao 2
+        function mudarCor1() {
+            document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
+        }
+        mudarCor1()
 
-            //Questao 4
-            function mudarTag() {
-                document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
-            }
-            mudarTag()
+        //Questao 3
+        function mudarCor2() {
+            document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+        }
+        mudarCor2()
 
-            //Questao 5
-            function mudarMaiusculo() {
-                const variavel = document.getElementsByTagName('p');
-                for (index of variavel) {
-                    console.log(index.innerText.toUpperCase());
-                    index.innerText = index.innerText.toUpperCase();
-                }
-                
-            }
-            mudarMaiusculo()
+        //Questao 4
+        function mudarTag() {
+            document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
+        }
+        mudarTag()
 
-            //Questao 6
-            function imprimir() {
-                const mostrar = document.getElementsByTagName('p');
-                for (tags of mostrar) {
-                    console.log(tags.innerText)
-                }
+        //Questao 5
+        function mudarMaiusculo() {
+            const variavel = document.getElementsByTagName('p');
+            for (index of variavel) {
+                console.log(index.innerText.toUpperCase());
+                index.innerText = index.innerText.toUpperCase();
             }
-            imprimir()
+
+        }
+        mudarMaiusculo()
+
+        //Questao 6
+        function imprimir() {
+            const mostrar = document.getElementsByTagName('p');
+            for (tags of mostrar) {
+                console.log(tags.innerText)
+            }
+        }
+        imprimir()
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
