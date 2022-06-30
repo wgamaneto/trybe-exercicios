@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //Questao 1 - Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+        const tag1 = document.createElement('h1');
+        tag1.innerText = 'Exercício 5.2 - JavaScript DOM';
+        document.body.appendChild(tag1);
+
+        //Questao 2 - Adicione a tag main com a classe main-content como filho da tag body;
+        const tag2 = document.createElement('main');
+        tag2.classList = 'main-content';
+        document.body.appendChild(tag2)
+
+        //Questao 3 - Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+        const tag3 = document.createElement('section');
+        tag3.classList = 'center-content';
+        tag2.appendChild(tag3);
+
+        //Questao 4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+        const tag4 = document.createElement('p');
+        tag4.innerText = 'Ximbalaie'
+        tag3.appendChild(tag4);
+
+        //Questao 5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+        const tag5 = document.createElement('section');
+        tag5.classList = 'left-content'
+        tag2.appendChild(tag5);
+
+        //Questao 6 - Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+        const tag6 = document.createElement('section');
+        tag6.classList = 'right-content'
+        tag2.appendChild(tag6);
+
+        //Questao 7 - Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+        const tag7 = document.createElement('img');
+        tag7.classList = 'small-image';
+        tag7.src = 'https://picsum.photos/200'
+        tag5.appendChild(tag7)
+
+        //Questao 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+        const tag8 = document.createElement('ul');
+        tag6.appendChild(tag8);
+        const palavras = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez'];
+        for (let palav in palavras) {
+            const lista = document.createElement('li');
+            lista.innerText = palavras[palav];
+            tag8.appendChild(lista);
+        }
+
+        //Questao 9 - Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+        for (let index = 1; index <= 3; index +=1) {
+            const tag9 = document.createElement('h3');
+            tag9.innerHTML = 'show ' + index;
+            tag2.appendChild(tag9);
+        }
+
+
+
+
+        //PARTE 2//
+        //Questao 1
+        const questao1 = document.querySelector('h1');
+        questao1.classList = 'title';
+        
+        //Questao 2
+        const questao2 = document.getElementsByTagName('h3');
+        for (index = 0; index < 3; index +=1) {
+            questao2[index].classList = 'description';
+        }
+
+        //Questao 3
+        const questao3 = document.getElementsByClassName('left-content')[0];
+        tag2.removeChild(tag5);
+
+        //Questao 4
+        const questao4 = document.getElementsByClassName('right-content')[0];
+        questao4.style.marginRight = 'auto'
+
+        //Questao 5
+        const questao5 = document.getElementsByClassName('center-content')[0];
+        questao5.style.backgroundColor = 'green';
+
+        //Questao 6
+        const questao6 = document.getElementsByTagName('ul')[0];
+        questao6.lastChild.remove();
+        questao6.lastChild.remove();
+
+    </script>
+</body>
+
+</html>
