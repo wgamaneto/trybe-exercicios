@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Atividade Forms</title>
 </head>
+
 <body>
     <header>
         <h1>
             Header da Pagina
         </h1>
     </header>
-    <main>
-    <div>
-    <form action="" method="get" enctype="multipart/form-data">
-        <div class="div-container">
-        <label for="nome" name="">Nome:
-        <input required type="text" name="nome" id="nome">
-        <br>
-        <br>
-        <label for="nome" name="">Email:
-        <input required type="email" name="e-mail" id="e-mail">
-        </div>
-    </form>
-</main>
-</div>
-    
+    <main class="main-container">
+        <div>
+            <form action="" method="get" enctype="multipart/form-data">
+                <fieldset>
+                    <section class="section-container">
+                        <div class="div-section">
+                            <label for="nome" name="">Nome: </label> <input required type="text" name="nome" id="nome">
+                            <label for="nome" name="">Email: </label> <input required type="email" name="e-mail"
+                                id="e-mail">
+                        </div>
+                        <br>
+                        <div class="radio-container">
+                            <input type="radio" name="escolhas1" id="escolhas1">Opcao 1
+                            <input type="radio" name="escolhas2" id="escolhas2">Opcao 2
+                            <input type="radio" name="escolhas3" id="escolhas3">Opcao 3
+                            <input type="radio" name="escolhas4" id="escolhas4">Opcao 4
+                        </div>
+                        <p>Espaco para digitar a resposta:</p>
+                        <textarea class="textarea" rows="20" cols="60">
+                    </textarea>
+                    <br>
+                        <div>
+                            <label for="data">Data:</label>
+                            <input class="data-container" type="date" id="data">
+                        </div>
+                        <br>
+                        <div class="checkbox-container">
+                            <label for="checkbox1">Concordo 1</label>
+                            <input type="checkbox" id="checkbox1">
+                            <br>
+                            <label for="checkbox2">Concordo 2</label>
+                            <input type="checkbox" id="checkbox2">
+
+                        </div>
+                    </section>
+                </fieldset>
+            </form>
+    </main>
+    <br>
+    <section class="ernani">
+        <button type="submit" name="" id="">Enviar</button>
+        <button type="reset" name="" id="">Apagar</button>
+    </section>
+
+
 </body>
+
 </html>
