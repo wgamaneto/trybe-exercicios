@@ -25,3 +25,10 @@ function getData(value) {
   dataFormatada = data.toLocaleDateString('pt-BR');
   return dataFormatada;
 }
+
+function li() {
+  
+  let lista = document.createElement('li');
+  ol.appendChild(lista)
+}
+li()
