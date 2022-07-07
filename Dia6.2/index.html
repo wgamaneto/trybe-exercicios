@@ -1,6 +1,7 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,45 +9,67 @@
   <link rel="stylesheet" href="style.css">
   <title>Hotel Trybe</title>
 </head>
-
 <body>
+  
   <header class="header-trybe">
-    <h1>Academia de Logica</h1>
     <img src="./Trybe-200x200.jpg">
+    <h1>Hotel Trybeeeeeeeer</h1>
   </header>
-  <section class="hotel-form">
-    <input type="date" name="" id="" class="inputCheckin">Check-in
-    <input type="date" name="" id="" class="inputCheckout">Check-on
-  </section>
-  <section class="hotel-form">
-    <input type="radio" name="room-flow" id="" class="bedroom"> Quarto 1
-    <input type="radio" name="room-flow" id="" class="bedroom"> Quarto 2
-    <input type="radio" name="room-flow" id="" class="bedroom"> Quarto 3
-  </section>
-  <section class="hotel-form">
-    <select>
-      <option class="nPessoas">1</option>
-      <option class="nPessoas">2</option>
-      <option class="nPessoas">3</option>
-      <option class="nPessoas">4</option>
-    </select>
-  </section>
-  <section class="hotel-form">
-    <textarea placeholder="Campo de observacoes" class="obs">
-    </textarea>
-  </section>
-  <button id="submit-btn">Submit</button>
+  <main>
 
-<section class="list-section">
-  <h2>Titulo</h2>
-  <ol>
+    <section class="hotel-form">
+      <form>
+          <h2>Reserve seu quarto!</h2>
+        <section class="form-section">
+            <label>Check-in:</label>
+            <input class="inputCheckin" type="date" style="width:30%">
+            <label>Check-out:</label>
+            <input class="inputCheckout" type="date" style="width:30%">
+        </section>
 
-  </ol>
-  <button id="clear-btn">Clear</button>
-</section>
+        <section class="form-section">
+          <span>Quartos:</span>
+          <div>
+            <input class="bedroom" type="radio" name="bedroom"id="">
+            <label for="comum">Comum</label>
+          </div>
+
+          <div>
+            <input class="bedroom" type="radio" name="bedroom" id="">
+            <label for="club">Club</label>
+          </div>
+
+          <div>
+            <input class="bedroom" type="radio" name="bedroom"id="">
+            <label for="luxo">Luxo</label>
+          </div>
+        </section>
+
+        <section class="form-section">
+            <label for="nPessoas" id="house-label">Pessoas:</label>
+            <select name="nPessoas" id="nPessoas" class="nPessoas">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+        </section>
+        
+        <section class="form-section">
+          <textarea placeholder="Observação" id="obs" class="obs" name="obs"></textarea>
+        </section>
+
+        <button type="submit" id="submit-btn">Reserva</button>
+      </form>
+    </section>
 
   
+    <section class="list-section">
+      <h2>Lista de reservas</h2>
+        <ol></ol>
+        <button type="submit" id="clear-btn">Clear</button>
+    </section>
+  </main>
   <script src="script.js"></script>
 </body>
-
 </html>
