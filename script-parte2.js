@@ -1,11 +1,11 @@
-// // Questao 1
-// const fatorial = (numero) => numero > 1 ? numero * fatorial(numero - 1) : 1;
-// console.log(fatorial(7));
+// Questao 1
+const fatorial = (numero) => numero > 1 ? numero * fatorial(numero - 1) : 1;
+console.log(fatorial(7));
 
-// // Qustao 2
-// const maiorPalavra = (texto) => texto.split(' ').sort((a, b) => b.length - a.length)[0];
+// Qustao 2
+const maiorPalavra = (texto) => texto.split(' ').sort((a, b) => b.length - a.length)[0];
 
-// console.log(maiorPalavra('Antonio foi ao banheiro e não sabemos o que aconteceu'));
+console.log(maiorPalavra('Antonio foi ao banheiro e não sabemos o que aconteceu'));
 
 //Questao 3
 const contagem = document.getElementById('contadorClicks');
@@ -29,6 +29,23 @@ const substituir = (nome) => {
     return novaFrase.join(' ');
 };
 
+// Funcao 2
+const fraseHabilidades = (evento) => {
+    const skills = ['JavaScript', 'HTML', 'CSS']
+    
+    let frases = `Ola, ${evento}
+
+Minhas principais habilidades sao: 
+
+${skills[0]}
+
+${skills[1]}
+
+${skills[2]}`
+
+    return frases
+}
+console.log(fraseHabilidades(substituir('ximboca')));
 
 // // Alternativa?
 // const substituir = (nome) => {
@@ -37,14 +54,3 @@ const substituir = (nome) => {
 //     return novaFrase.join(' ')
 // }
 // console.log(substituir('ximboca'));
-
-
-// Funcao 2
-const fraseHabilidades = (evento) => {
-    const skills = ['JavaScript', 'HTML', 'CSS']
-    let frases = `Ola, ${evento}
-Minhas principais habilidades sao: 
-${skills}`
-    return frases
-}
-console.log(fraseHabilidades(substituir('ximboca')));
