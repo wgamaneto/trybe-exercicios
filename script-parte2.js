@@ -15,3 +15,36 @@ contagem.addEventListener('click', () => {
     click += 1;
     console.log(click);
 })
+
+//Questao 4 - funcao 1
+const substituir = (nome) => {
+    const frase = 'Tryber x aqui!'
+    const novaFrase = frase.split(' ');
+    for (i = 0; i < novaFrase.length; i += 1) {
+        if (novaFrase[i] === 'x') {
+            novaFrase[i] = nome
+            // console.log(novaFrase);
+        }
+    }
+    return novaFrase.join(' ');
+};
+
+
+// // Alternativa?
+// const substituir = (nome) => {
+//     const frase = 'Tryber x aqui!'
+//     const novaFrase = frase.split(' ').replace('x', nome);
+//     return novaFrase.join(' ')
+// }
+// console.log(substituir('ximboca'));
+
+
+// Funcao 2
+const fraseHabilidades = (evento) => {
+    const skills = ['JavaScript', 'HTML', 'CSS']
+    let frases = `Ola, ${evento}
+Minhas principais habilidades sao: 
+${skills}`
+    return frases
+}
+console.log(fraseHabilidades(substituir('ximboca')));
