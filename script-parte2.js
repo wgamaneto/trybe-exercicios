@@ -7,6 +7,14 @@ const maiorPalavra = (texto) => texto.split(' ').sort((a, b) => b.length - a.len
 
 console.log(maiorPalavra('Antonio foi ao banheiro e não sabemos o que aconteceu'));
 
+// Questao 2 - alternativa
+// const maiorPalavra = (texto) => {
+//     console.log(texto);
+//     return texto.split(' ').sort((a, b) => b.length - a.length)
+// };
+
+// console.log(maiorPalavra('Antonio foi ao banheiro e não sabemos o que aconteceu'));
+
 //Questao 3
 const contagem = document.getElementById('contadorClicks');
 let click = 0
@@ -47,10 +55,9 @@ ${skills[2]}`
 }
 console.log(fraseHabilidades(substituir('ximboca')));
 
-// // Alternativa?
+// Alternativa?
 // const substituir = (nome) => {
 //     const frase = 'Tryber x aqui!'
-//     const novaFrase = frase.split(' ').replace('x', nome);
-//     return novaFrase.join(' ')
+//     return frase.replace('x', nome);
 // }
-// console.log(substituir('ximboca'));
+//  console.log(substituir('ximboca'));
