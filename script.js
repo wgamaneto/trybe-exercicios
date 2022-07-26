@@ -66,14 +66,14 @@ const info = () => {
   return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`)
 }
 
-console.log(info(books));
+console.log('Questao 1', info(books));
 
 
 //Questao 2
 const objetosArr = () => {
   return books.map((book) => ({ author: book.author.name, age: book.releaseYear - book.author.birthYear })).sort((a, b) => a.age - b.age)
 }
-console.log(objetosArr(books));
+console.log('Questao 2', objetosArr(books));
 
 
 //Questao3
@@ -81,26 +81,32 @@ const filtrarGenero = () => {
   return books.filter((filtro) => filtro.genre === 'Ficção Científica' || filtro.genre === 'Fantasia')
 }
 
-console.log(filtrarGenero(books));
+console.log('Questao 3', filtrarGenero(books));
 
 
 //Questao 4
 const idadeLivros = () => {
-  return books.filter((idade) => 2022 - idade.releaseYear > 60).sort((a, b) => a.releaseYear - b.releaseYear)
+  return books.filter((idade) => 2022 - idade.releaseYear - 60).sort((a, b) => a.releaseYear - b.releaseYear)
 }
-console.log(idadeLivros(books));
+console.log('Questao 4', idadeLivros(books));
 
 
 //Questao 5
-const expectedResult = [
-  'Frank Herbert',
-  'George R. R. Martin',
-  'Isaac Asimov',
-  'J. R. R. Tolkien',
-];
-
 const autores = () => {
-  const generos = ['Fantasia', 'Ficção Científica'];
-  return expectedResult.filter((book) => generos.includes(book.genre)).map((book) => book.author.name).sort();
+  return books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica').map((autor) => autor.author.name).sort();
 }
-console.log(autores(books));
+console.log('Questao 5', autores(books))
+
+
+//Questao 6
+const livros = () => {
+  return books.filter((book) => 2022 - book.releaseYear > 60).map((nome) => nome.name)
+}
+console.log('Questao 6', livros(books));
+
+
+//Questao 7
+const autor = () => {
+  return books.filter((nome) => nome.author.name[7] === '.').find((autor) => autor.author.name)
+}
+console.log('Questao 7', autor(books));
