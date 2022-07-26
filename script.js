@@ -107,6 +107,6 @@ console.log('Questao 6', livros(books));
 
 //Questao 7
 const autor = () => {
-  return books.filter((nome) => nome.author.name[7] === '.').map((autor) => autor.author.name)
+  return books.filter((nome) => nome.author.name[7] === '.').map((livro) => livro.name)
 }
 console.log('Questao 7', autor(books));
