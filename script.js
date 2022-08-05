@@ -1,112 +1,109 @@
-const books = [
-  {
-    id: 1,
-    name: 'As Crônicas de Gelo e Fogo',
-    genre: 'Fantasia',
-    author: {
-      name: 'George R. R. Martin',
-      birthYear: 1948,
-    },
-    releaseYear: 1991,
-  },
-  {
-    id: 2,
-    name: 'O Senhor dos Anéis',
-    genre: 'Fantasia',
-    author: {
-      name: 'J. R. R. Tolkien',
-      birthYear: 1892,
-    },
-    releaseYear: 1954,
-  },
-  {
-    id: 3,
-    name: 'Fundação',
-    genre: 'Ficção Científica',
-    author: {
-      name: 'Isaac Asimov',
-      birthYear: 1920,
-    },
-    releaseYear: 1951,
-  },
-  {
-    id: 4,
-    name: 'Duna',
-    genre: 'Ficção Científica',
-    author: {
-      name: 'Frank Herbert',
-      birthYear: 1920,
-    },
-    releaseYear: 1965,
-  },
-  {
-    id: 5,
-    name: 'A Coisa',
-    genre: 'Terror',
-    author: {
-      name: 'Stephen King',
-      birthYear: 1947,
-    },
-    releaseYear: 1986,
-  },
-  {
-    id: 6,
-    name: 'O Chamado de Cthulhu',
-    genre: 'Terror',
-    author: {
-      name: 'H. P. Lovecraft',
-      birthYear: 1890,
-    },
-    releaseYear: 1928,
-  },
-];
+// //Questao 1
+// const getPlanet = () => {
+//     const mars = {
+//       name: "Mars",
+//       distanceFromSun: {
+//         value: 227900000,
+//         measurementUnit: "kilometers",
+//       },
+//     };
+//     console.log("Returned planet: ", mars);
+//   };
 
-//Questao 1
-const info = () => {
-  return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`)
-}
+//   setTimeout(() => getPlanet(), 4000); // imprime Marte depois de 4 segundos
 
-console.log('Questao 1', info(books));
+// //Questao 2
+// const messageDelay = () => Math.floor(Math.random() * 5000);
 
+// const getMarsTemperature = () => {
+//   const maxTemperature = 58;
+//   return Math.floor(Math.random() * maxTemperature);
+// };
 
-//Questao 2
-const objetosArr = () => {
-  return books.map((book) => ({ author: book.author.name, age: book.releaseYear - book.author.birthYear })).sort((a, b) => a.age - b.age)
-}
-console.log('Questao 2', objetosArr(books));
+// const sendMarsTemperature = () => {
+//     const enviarTemperatura = getMarsTemperature();
+//     setTimeout(() => {
+//       console.log(`A temperatura de Marte é: ${enviarTemperatura} graus celsius`), messageDelay()
+//     });
+// };
 
+// sendMarsTemperature()
 
-//Questao3
-const filtrarGenero = () => {
-  return books.filter((filtro) => filtro.genre === 'Ficção Científica' || filtro.genre === 'Fantasia')
-}
+// //Questao 3
+// const messageDelay = () => Math.floor(Math.random() * 5000);
 
-console.log('Questao 3', filtrarGenero(books));
+// const getMarsTemperature = () => {
+//   const maxTemperature = 58;
+//   return Math.floor(Math.random() * maxTemperature);
+// };
 
+// const toFahrenheit = (degreeCelsius) => (degreeCelsius * 9 / 5) + 32;
 
-//Questao 4
-const idadeLivros = () => {
-  return books.filter((idade) => 2022 - idade.releaseYear - 60).sort((a, b) => a.releaseYear - b.releaseYear)
-}
-console.log('Questao 4', idadeLivros(books));
+// const temperatureInFahrenheit = (temperature) =>
+//   console.log(`It is currently ${toFahrenheit(temperature)}ºF at Mars`);
 
+// const greet = (temperature) =>
+//   console.log(`Hi there! Curiosity here. Right now is ${temperature}ºC at Mars`);
+
+//   const sendMarsTemperature = (elemento) => {
+//     const enviarTemperatura = getMarsTemperature();
+//     setTimeout(() => {
+//       elemento(enviarTemperatura) , messageDelay()
+//     });
+// };
+
+// sendMarsTemperature(temperatureInFahrenheit); // imprime "It is currently 47ºF at Mars", por exemplo
+// sendMarsTemperature(greet); // imprime "Hi there! Curiosity here. Right now is 53ºC at Mars", por exemplo
+
+// //Questao 4
+// const messageDelay = () => Math.floor(Math.random() * 5000);
+
+// const getMarsTemperature = () => {
+//   const maxTemperature = 58;
+//   return Math.floor(Math.random() * maxTemperature);
+// }
+
+// const toFahrenheit = (degreeCelsius) => (degreeCelsius * (9 / 5)) + 32;
+
+// const temperatureInFahrenheit = (temperature) =>
+//   console.log(`It is currently ${toFahrenheit(temperature)}ºF at Mars`);
+
+// const greet = (temperature) =>
+//   console.log(`Hi there! Curiosity here. Right now is ${temperature}ºC at Mars`);
+
+// const handleError = (errorReason) =>
+//   console.log(`Error getting temperature: ${errorReason}`);
+
+// // definição da função sendMarsTemperature...
+// const sendMarsTemperature = (elemento, erro) => {
+//   const enviarTemperatura = getMarsTemperature();
+//   const chanceDeEnvio = Math.random() <= 0.6;
+
+//   setTimeout(() => {
+//     if (chanceDeEnvio) {
+//       elemento(enviarTemperatura)
+//     } else{
+//       erro('Deu ruim');
+//     } 
+//     messageDelay()});
+// };
+
+// // imprime "It is currently 47ºF at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
+// sendMarsTemperature(temperatureInFahrenheit, handleError);
+
+// // imprime "Hi there! Curiosity here. Right now is 53ºC at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
+// sendMarsTemperature(greet, handleError);
 
 //Questao 5
-const autores = () => {
-  return books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica').map((autor) => autor.author.name).sort();
-}
-console.log('Questao 5', autores(books))
+const uppercase = (str, callback) => {
+  setTimeout(() => {
+    callback(str.toUpperCase());
+  }, 500);
+};
 
-
-//Questao 6
-const livros = () => {
-  return books.filter((book) => 2022 - book.releaseYear > 60).map((nome) => nome.name)
-}
-console.log('Questao 6', livros(books));
-
-
-//Questao 7
-const autor = () => {
-  return books.filter((nome) => nome.author.name[7] === '.').map((livro) => livro.name)
-}
-console.log('Questao 7', autor(books));
+it('testa caixa alta', (done) => {
+  uppercase('ximboca', (elemento) => {
+    expect(elemento).toBe('XIMBOCA');
+    done();
+  });
+});
